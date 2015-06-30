@@ -1,0 +1,5 @@
+localhost
+root
+GU4T3M4L4
+durablock
+null

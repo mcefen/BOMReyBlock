@@ -1,0 +1,22 @@
+create database durablock;
+use durablock;
+
+create table block(Codigo int auto_increment,Tipo_Block varchar(250),Largo double,Ancho double, Alto double, Resistencia int,color varchar(70),primary key(codigo));
+
+create table personal(Codigo int auto_increment, Nombre varchar(250), Apellido varchar(250), Puesto varchar(250), DPI varchar(15), Direccion varchar(500), Telefono int(8), Sueldo_Base double, IGSS varchar(15), Sueldo double, Bonificacion double, Horas_Extras double, primary key (codigo));
+
+create table materia(Codigo int auto_increment, Nombre varchar(100),Botes_Segundo double, Medida double, Color varchar(70), Presentacion varchar (70), Proveedor varchar(250), primary Key (codigo));
+INSERT INTO MATERIA (Nombre,Botes_Segundo,Medida,Color,Presentacion,Proveedor) values ('Cemento',180,5800,'Gris','LBS','Global CEMENT');
+
+create table molde (Codigo int auto_increment, Nombre varchar(250), Largo double, Ancho double, Alto double, Unidades_de_Block int , Fecha date, primary key (codigo));
+
+create table produccion(Codigo int auto_increment, Tipo_de_Block varchar(250),Cantidad_de_tablas int, Cantidad_de_blocks_por_tablas int , Blocks_quebrados_al_producir int , Blocks_quebrados_al_sacar int, Blocks_de_Segunda int, Cantidad_de_blocks int, Fecha date, Molde varchar(250), Molde_Codigo int, Bachadas int, primary key(codigo));
+Insert into Produccion(tipo_de_block) values ('HORAS EXTRAS o DESCUENTOS ');
+
+Create table materialesp (Codigo int auto_increment, Nombre varchar (100),  Cantidad float, Fecha date, Codigo_Produccion int, primary key (codigo), foreign key (Codigo_produccion) references produccion(Codigo) ON DELETE SET NULL ON UPDATE CASCADE);
+
+Create table personalp (Codigo int auto_increment, Nombre varchar (250), Apellido varchar(250), Puesto varchar (250), Cantidad_de_Blocks int, Sueldo_en_Q double, Bonificacion_en_Q double,Horas_Extras double, Descuentos double, Total_en_Q double, Codigo_Produccion int, Fecha date, primary key (codigo), Foreign key (Codigo_Produccion) references produccion(Codigo) ON DELETE SET NULL ON UPDATE CASCADE);
+
+Create table moldesp (Codigo int auto_increment, Nombre varchar(250), Cantidad_de_Blocks int, Codigo_Produccion int, Fecha date, primary key (codigo), Foreign key (Codigo_Produccion) references produccion(Codigo) ON DELETE SET NULL ON UPDATE CASCADE);
+
+
