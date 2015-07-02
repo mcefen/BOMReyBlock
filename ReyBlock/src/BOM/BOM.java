@@ -1,7 +1,6 @@
-// Giovanni Rojas Developer
+ // Giovanni Rojas Developer
 package BOM;
 
-import java.awt.Toolkit;
 import javax.swing.UIManager;
 
 

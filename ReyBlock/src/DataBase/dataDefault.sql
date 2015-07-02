@@ -17,7 +17,7 @@ INSERT INTO perdida_block (etiqueta_perdida) values ('Blocks de Segunda ');
 -- color blanco y resto null
 -- -----------------------------------------------------
 
-INSERT INTO configuracion VALUES(0,'255','255', '255', 'No Name', ' ', ' ', null);
+INSERT INTO configuracion VALUES(0,'255','255', '255', 'No Name', ' ', ' ','', null);
 
 -- --------------------------------------------------------
 -- Insertar los tipos de gastos de la empresa 
