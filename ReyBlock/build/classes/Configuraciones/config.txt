@@ -1,5 +1,5 @@
 localhost
 root
-GU4T3M4L4
+1234
 durablock
 null

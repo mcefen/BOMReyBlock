@@ -1,0 +1,62 @@
+
+
+Gastos : 
+    Camiones
+    Maquinas 
+    Moldes
+    Empresa (Luz, Telefono) con posibilidad de que sea ingreso por mes, semana o anual y la creacion de estos. 
+
+
+
+Reportes
+    Reporte de planilla 
+    Gastos de Moldes 
+    Gastos de Camiones 
+    Gastos de Maquinas 
+    Horas extras de Trabajadores 
+    Descuentos de Trabajador 
+    Horas extra y descuento de trabajador. 
+    Uso de Moldes 
+    Blocks Quebrados 
+    Costo del Block 
+    Dinero en Produccion
+
+Todos estos reportes se generaran en base a una fecha inicial y final, estos se podran 
+organizar con varios filtros, la idea de esto ultimo es trabajar como si estuvieramos 
+trabajando para el señor, haremos algo asi como reportes inteligentes. 
+
+
+Formularios 
+    Ingreso de Produccion 
+    Ingreso de Viajes 
+
+La idea de esto es que para el inventario las personas se van a contar el block a fuera 
+y lo apuntan en un papel y luego se mete aqui en el programa, pero al ser asi se necesita que 
+sean formularios bonitos y membretados con el logo de la empresa y supongamos que al momento 
+de generar un formulario de produccion vaya a jalar el nombre de los blocks que pueden estar ahi, 
+esto con la posibilidad de quitar algunos cuantos. (Esto es una simple y asquerosa plantilla de excel).
+
+Configuraciones 
+    Nombre de la empresa 
+    Color de aplicacion 
+    Usuarios con permisos. 
+
+Lo que resta de configuraciones seria de implementar lo que ya hicimos con el señor y hacerlo aqui, para 
+asi ya tener algo y pues utilzar codigo ya hecho.  
+
+
+Maquinaria
+    Nueva Maquina
+    Editar Maquina 
+    Eliminar 
+Este es un concepto que quiero dejar de ultimo, util si algun dia se logra vender este programa, porque lo que 
+hace este concepto es crear maquinas y que haga lo mismo solo que para varias maquinas no solo para una 
+asi que es un poco mas complejo porque esta maquina tendria vida, tendria reportes propios, personas que trabajaron en ella 
+lotes de produccion, cantidad de block de esta maquina, y en fin tiene n y todo se va haciendo n separado. es un poco 
+complejo y es mejor dejarlo de ultimo, gracias a Dios esta bloquera solo tiene una maquina. 
+*/
+
+UPDATE de Ingreso de Material 
+
+    Falta ver que cuando cambie el precio unitario del material, no afecte en los demas. 
+    porque es imporante que no lo cambie para los demas 
